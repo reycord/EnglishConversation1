@@ -34,7 +34,7 @@
                 <ul class="nav navbar-nav" style="font-size: 13px;">
                     <li><a href="<?php echo base_url(); ?>"><span class="glyphicon glyphicon-home"></span> Home</a></li>
                     <li><a href="#"><span class="glyphicon glyphicon-book"></span> History</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-import"></span> Translate</a></li>
+                    <li><a href="<?php echo base_url(); ?>Translate"><span class="glyphicon glyphicon-import"></span> Translate</a></li>
                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-dashboard"></span> Vocabulary <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#"><span class="glyphicon glyphicon-ice-lolly"></span> Beginner</a></li>
@@ -118,9 +118,9 @@
                         		</div>
                     		</div>
                     		<div class="form-group">
-                        		<div class="col-sm-offset-3 col-sm-9">
+                        		<div class="col-sm-offset-3 col-sm-7">
                             		<button class="btn btn-primary" name="signin">Sign in</button>
-                                	<button type="reset" class="btn btn-default btn-sm">Reset</button>
+                                	<button type="reset" class="btn btn-default">Reset</button>
                         		</div>
 							</div>
 							<div class="form-group last">

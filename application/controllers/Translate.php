@@ -1,5 +1,5 @@
 <?php
-class Index extends My_Controller {
+class Translate extends My_Controller {
 
     function __construct(){
         parent::__construct();
@@ -7,6 +7,6 @@ class Index extends My_Controller {
 
     public function index()
     {
-        $this->load->view('index');
+        $this->load->view('Translate/index');
     }
 }
