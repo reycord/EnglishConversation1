@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Welcome English Conversation</title>
@@ -11,9 +11,6 @@
         <script type="text/javascript" src="<?php echo base_url(); ?>vendors/bootstrap/dist/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>vendors/bootstrap/dist/js/bootstrap-datetimepicker.min.js"></script>
         <script type='text/javascript'>
-            $(function(){
-                $('.input-group.date').datepicker({});
-            });
         </script>
     </head>
     <body>
@@ -37,7 +34,6 @@
                             <li><a href="#"><span class="glyphicon glyphicon-grain"></span> Advanced</a></li>
                         </ul>
                     </li>
-                    <!-- <li><a href="#"><span class="glyphicon glyphicon-picture"></span> Vocabulary Picture</a></li> -->
                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-headphones"></span> Listening <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#"><span class="glyphicon glyphicon-ice-lolly"></span> Beginner</a></li>
@@ -83,19 +79,35 @@
                 </ul>
             </div>
         </nav>
-  
+
 		<div class="container">
     		<div class="row">
-        		<div class="col-sm-7 col-sm-offset-2">
+        		<div class="col-sm-10 col-sm-offset-1">
             		<div class="panel-body">
                     	<form class="form-horizontal" role="form" action="" method="POST">
 							<div class="form-group">
 								<h1>Translate Form</h1>
                             </div>
                     		<div class="form-group">
-                        		<div class="col-sm-offset-3 col-sm-7">
-                                    <button class="btn btn-default btn-choice-sentence btn-javi active-language" name="english_to_vietnamese">English => Vietnamese</button>
-                                    <button class="btn btn-default btn-choice-sentence btn-javi" name="vietnamese_to_english">Vietnamese => English</button>
+                        		<div class="col-sm-offset-3 col-sm-12">
+                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li class="selected"><a href="#">English => Vietnamese</a></li>
+                                        <li><a href="#">Vietnamese => English</a></li>
+                                    </ul>
+                                    <button type="button" class="btn btn-primary" name="translate">Translate</button>
+                        		</div>
+							</div>
+                            <div class="form-group">
+                        		<div class="col-sm-12">
+                                    <div class="col-sm-6">
+                                        <textarea type="text" id="txt_area_source" class="md-textarea form-control" rows="10"></textarea>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <textarea type="text" id="txt_area_target" class="md-textarea form-control" rows="10"></textarea>
+                                    </div>
                         		</div>
 							</div>
                     	</form>
@@ -104,4 +116,6 @@
    			</div>
 		</div>
     </body>
-</html>
+</html> -->
+
+

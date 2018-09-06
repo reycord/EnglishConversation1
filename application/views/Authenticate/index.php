@@ -102,7 +102,7 @@
 								<h1>Login Form</h1>
                             </div>
                             <?php if(isset($_SESSION['error'])) { ?>
-                                <div class="alert alert-danger"><?php echo $_SESSION['error']?></div>
+                                <div class="alert alert-danger"><?php if(isset($isSuccess) && !$isSuccess) echo('asdasdas') ?></div>
                             <?php } ?>
                             <?php echo validation_errors('<div class="alert alert-danger">', '</div>') ?>
                     		<div class="form-group">

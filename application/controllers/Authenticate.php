@@ -39,11 +39,14 @@ class Authenticate extends My_Controller {
                     redirect('index', 'refresh');
                 }
                 else{
+                    $data = array('isSuccess'=>false);
+                    $this->load->view('Authenticate/index',  $data);
                     $_SESSION['user_logged'] = FALSE;
                     $this->session->set_flashdata('error', 'No such account exists in database!');
                 }
             }
         }
+
         $this->load->view('Authenticate/index');
     }
 }
