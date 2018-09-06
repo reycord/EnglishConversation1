@@ -8,6 +8,6 @@ class Homepage extends My_Controller {
     public function index()
     {
         // Load the subview
-        $content = $this->load->view(('index',null);
+        $content = $this->load->view(('index'));
     }
 }

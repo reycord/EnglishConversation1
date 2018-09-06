@@ -8,9 +8,6 @@ class Authenticate extends My_Controller {
     public function index()
     {
         if (isset($_POST['signin'])){
-            //Set validation field data
-            $this->form_validation->set_rules('email', 'Email', 'required');
-            $this->form_validation->set_rules('password', 'Password', 'required|min_length[5]');
 
             if ($this->form_validation->run() == TRUE){
                 $email = $_POST['email'];
@@ -40,13 +37,13 @@ class Authenticate extends My_Controller {
                 }
                 else{
                     $data = array('isSuccess'=>false);
-                    $this->load->view('Authenticate/index',  $data);
+                    $this->load->view('authenticate',  $data);
                     $_SESSION['user_logged'] = FALSE;
                     $this->session->set_flashdata('error', 'No such account exists in database!');
                 }
             }
         }
 
-        $this->load->view('Authenticate/index');
+        $this->load->view('authenticate');
     }
 }

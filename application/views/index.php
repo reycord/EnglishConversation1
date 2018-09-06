@@ -66,7 +66,7 @@
 							<p>Welcome to English Conversation</p>
 						</div>
 						<div class="col-xs-6 col-md-push-2 text-right">
-							<p class="btn-apply"><a href="#">Sign in</a></p>
+							<p class="btn-apply"><a href="<?php echo base_url(); ?>authenticate">Sign up/Sign in</a></p>
 						</div>
 					</div>
 				</div>
@@ -141,7 +141,7 @@
 		<aside id="colorlib-hero">
 			<div class="flexslider">
 				<ul class="slides">
-			   	    <li style="background-image: url(vendors/images/img_bg_4.jpg);">
+			   	    <li style="background-image: url(vendors/images/img_bg_5.jpg);">
 			   		    <div class="container-fluid">
 			   			    <div class="row">
 				   			    <div class="col-md-8 col-sm-12 col-md-offset-1 col-xs-12 col-md-pull-1 slider-text">
