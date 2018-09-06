@@ -34,31 +34,32 @@
 
 				<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
 					<form class="login100-form validate-form" action="" method="POST">
+						<p style="color:#d42a38; text-align: center; width: 364px;"><?php echo (isset($err_message) ? $err_message : '') ?></p>
 						<span class="login100-form-title p-b-59">
 							Sign Up
 						</span>
-
+						<?php echo form_error('email'); ?>
 						<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
 							<span class="label-input100">Email</span>
 							<input class="input100" type="text" name="email" placeholder="Email addess...">
 							<span class="focus-input100"></span>
 						</div>
-
+						<?php echo form_error('username'); ?>
 						<div class="wrap-input100 validate-input" data-validate="Username is required">
 							<span class="label-input100">Username</span>
 							<input class="input100" type="text" name="username" placeholder="Username...">
 							<span class="focus-input100"></span>
 						</div>
-
+						<?php echo form_error('password'); ?>
 						<div class="wrap-input100 validate-input" data-validate = "Password is required">
 							<span class="label-input100">Password</span>
-							<input class="input100" type="password" name="pass" placeholder="*************">
+							<input class="input100" type="password" name="password" placeholder="*************">
 							<span class="focus-input100"></span>
 						</div>
-
+						<?php echo form_error('repeat-password'); ?>
 						<div class="wrap-input100 validate-input" data-validate = "Repeat Password is required">
 							<span class="label-input100">Repeat Password</span>
-							<input class="input100" type="password" name="repeat-pass" placeholder="*************">
+							<input class="input100" type="password" name="repeat-password" placeholder="*************">
 							<span class="focus-input100"></span>
 						</div>
 
